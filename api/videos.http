@@ -1,0 +1,28 @@
+@api = http://localhost:4000
+
+### LIST VIDEOS
+GET {{api}}/videos
+
+### GET A VIDEO
+GET {{api}}/videos/616876f4d179749715022d1b
+
+### CREATE A VIDEO
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "title": "MERN APP",
+    "description": "MERN app with TypeScript",
+    "url": "https://www.youtube.com/watch?v=_RZ-T6TxP7w&t=3491s"
+}
+
+### DELETE A VIDEO
+DELETE {{api}}/videos/616870d2dc788fdcf09eb2ee
+
+### UPDATE A VIDEO
+PUT {{api}}/videos/616876f4d179749715022d1b
+Content-Type: application/json
+
+{
+    "title": "MERN APP 3"
+}
